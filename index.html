@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Hoài Nam</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url(Image/spheres-motion-for-ai-product-design-by-gleb-large.gif);
+            background-size: auto;
+            background-position: center;
+            height: auto;
+        }
+        .flex{
+            display: flex;
+        }
+        .main{
+            width: 90%;
+            margin: 0 auto;
+        }
+        .introduce{
+            margin: 0 auto;
+            margin-top: 5%;
+            margin-bottom: 8%;
+        }
+        .introduce__avatar{
+            justify-content: center;
+        }
+        .introduce__avatar > img{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+        .introduce__name{
+            margin-top: 2%;
+            color: gold;
+            text-align: center;
+        }
+        .introduce__name h2 {
+            display: inline-block;
+        }
+        .introduce__name span{
+            display:inline-block;
+            color: #3897F0 !important;
+            position: relative;
+        }
+        .tempTitle {
+            color: white;
+            padding: 3px;
+            position: absolute;
+            top: -35px;
+            left: -40px;
+            background-color: black;
+            width: 100px;
+            height: auto;
+            border-radius: 5px;
+            display: none;
+        }
+        .iconTitle{
+            position: absolute;
+            height: 10px;
+            top: -12px;
+            left: 0;
+            border-top: 10px solid black;
+            border-right: 8px solid transparent;
+            border-left: 8px solid transparent;
+            display: none;
+        }
+        .introduce__description{
+            margin: 0 auto;
+            text-align: center;
+            color: whitesmoke;
+        }
+        .introduce__description p {
+            margin-top: 0;
+        }
+        .link{
+            margin: 0 auto;
+            max-width: 600px;
+        }
+        .link__item{
+            color: white;
+            height: 55px;
+            border-radius: 50px;
+            border: 1px blueviolet solid;
+            margin-bottom: 20px;
+        }
+        .link__item--black{
+            background-color: black;
+        }
+        .link__item--blue{
+            background-color: #2165de;
+        }
+        .link__item--brown{
+            background-color: #251c19;
+        }
+        .link__item--pink{
+            background-color: #f50053;
+        }
+        .link__item--green{
+            background-color: #7aee0f;
+        }
+        .link__item--blueM{
+            background-color: #0b5dd6;
+        }
+        .link__item--blueZ{
+            background-color: #34edff;
+        }
+        .link__item--orange{
+            background-color: orange;
+        }
+        .link__item  a{
+            text-decoration: none;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            border-radius: inherit;
+        }
+        a:hover, a:link, a:active, a:visited{
+            color: inherit
+        }
+        .link__item div{
+            height: 45px;
+        }
+        .link__item img{
+            height: 45px;
+            border-radius: 50rem;
+            margin-left: 10px;
+        }
+        .link__item a span{
+            width: 100%;
+            text-align: center;
+            transform: translateX(-25px);
+        }
+        .end p{
+            color: gold;
+            text-align: center;
+        }
+        .end .iconMail{
+            text-align: center;
+            color: #3897F0;
+            font-size: 30px;
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
+    </style>
+    
+    <script>
+        function hover(){
+            document.querySelector(".tempTitle").style.display = 'block'; 
+            document.querySelector(".iconTitle").style.display = 'block';
+        }
+        function leave(){
+            document.querySelector(".tempTitle").style.display = 'none'; 
+            document.querySelector(".iconTitle").style.display = 'none';
+        }
+    </script>
+
+</head>
+<body>
+    <div class="main">
+        <div class="introduce">
+            <div class="introduce__avatar flex">
+                <img src="Image/f71480881e1deb43b20c.jpg" alt="Avatar">
+            </div>
+            <div class="introduce__name">
+                <h2>Đặng Ngọc Hoài Nam</h2> 
+                <span onmouseleave="leave()">
+                    <div class="tempTitle">Đã xác minh</div>
+                    <div class="iconTitle"></div>
+                    <i onmouseover="hover()" class="fas fa-check-circle"></i>
+                </span>
+            </div>
+            <div class="introduce__description">
+                <p>Hãy đến nơi bạn thích, hãy trở thành người mà bạn muốn. 
+                    Bởi lẽ, bạn chỉ có một cuộc đời và một cơ hội để thực hiện tất cả những gì mong mỏi.</p>
+            </div>
+        </div>  
+        <div class="link">
+            <div class="link__item link__item--black">
+                <a class="flex" href="https://www.tiktok.com/@hoainam061?lang=vi-VN" target="_blank">
+                    <div>
+                        <img src="Image/logo/giphy (1).gif" alt="logo">
+                    </div>
+                    <span>TikTok</span>
+                </a>
+            </div>
+            <div class="link__item link__item--blue">
+                <a class="flex" href="https://www.facebook.com/DangNgocHoaiNam01/" target="_blank">
+                    <div>
+                        <img src="Image/logo/2953643177496cc51ba5995be961ad2a.gif" alt="logo">
+                    </div>
+                    <span>Facebook</span>
+                </a>
+            </div>
+            <div class="link__item link__item--pink">
+                <a class="flex" href="https://www.instagram.com/nam.dnh61/" target="_blank">
+                    <div>
+                        <img src="Image/logo/632f181a195d19f2dfa12aff8c45b72b.gif" alt="logo">
+                    </div>
+                    <span>Instagram</span>
+                </a>
+            </div>
+            <div class="link__item link__item--brown">
+                <a class="flex" href="https://github.com/dangngochoainam" target="_blank">
+                    <div>
+                        <img src="Image/logo/c04177ad3f5954f3ec22b7257f13f7ef.gif" alt="logo">
+                    </div>
+                    <span>GitHub</span>
+                </a>
+            </div>
+            <div class="link__item link__item--blueZ">
+                <a class="flex" href="https://zalo.me/0382890580" target="_blank">
+                    <div>
+                        <img src="Image/logo/zalo-1-logo-svg-vector.svg" alt="logo">
+                    </div>
+                    <span>Zalo</span>
+                </a>
+            </div> 
+            <div class="link__item link__item--green">
+                <a class="flex" href="tel:+84382890580" target="_blank">
+                    <div>
+                        <img src="Image/logo/49-490256_box-phone-svg-png-icon-free-call-vector.png" alt="logo">
+                    </div>
+                    <span>Số điện thoại</span>
+                </a>
+            </div>  
+            <div class="link__item link__item--orange">
+                <a class="flex" href="https://twitter.com/ngNgcHoiNam1" target="_blank">
+                    <div>
+                        <img src="Image/logo/8d1da069fb8119f8760fa2350d294738.gif" alt="logo">
+                    </div>
+                    <span>Twitter</span>
+                </a>
+            </div> 
+            <div class="link__item link__item--blueM">
+                <a class="flex" href="https://www.messenger.com/t/DangNgocHoaiNam01" target="_blank">
+                    <div>
+                        <img src="Image/logo/54ec6a70676e607c103c6c9a2e8a20bd.gif" alt="logo">
+                    </div>
+                    <span>Messenger</span>
+                </a>
+            </div> 
+
+        </div>
+        <div class="end">
+            <div class="iconMail">
+                <a href="mailto:dangngochoainam0601@gmail.com"><i class="far fa-envelope"></i></a>
+            </div>
+            <p>made by Hoài Nam</p>
+        </div>      
+    </div>
+</body>
+</html>
